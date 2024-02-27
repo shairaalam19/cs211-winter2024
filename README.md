@@ -38,7 +38,7 @@ import_pb.py in this repository
 Use the .pb file in the model as input and the model can be visualized with tensorboard as described in the comments (available after installing tensorflow)
 
 ## Tensorflow Model Basics Documentation
-[Link to Documentation]('Tensorflow Model Basics.pdf')
+[Link to Documentation](<Tensorflow Model Basics.pdf>)
 
 ## TPU Starter
 [Link to TPU Starter](tpu-starter.tar.gz) 
