@@ -30,7 +30,7 @@ Mentor: Boyan Ding <dboyan@cs.ucla.edu>
 [Link to DLC Codebase](DLC)
 
 ## Model 
-[Link to Model](: https://huggingface.co/spaces/DeepLabCut/MegaDetector_DeepLabCut/blob/fcceb7af93d1271633a7d0025a21498cf19863d0/DLC_ma_superquadruped_resnet_50_iteration-0_shuffle-1.tar.gz)
+[Link to Model](https://huggingface.co/spaces/DeepLabCut/MegaDetector_DeepLabCut/blob/fcceb7af93d1271633a7d0025a21498cf19863d0/DLC_ma_superquadruped_resnet_50_iteration-0_shuffle-1.tar.gz)
 
 ## Visualization script
 [Link to Visualization script](import_pb.py)
