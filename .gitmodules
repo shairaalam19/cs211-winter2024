@@ -1,0 +1,3 @@
+[submodule "DLC"]
+	path = DLC
+	url = https://github.com/DeepLabCut/DeepLabCut-live.git
