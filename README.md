@@ -46,6 +46,13 @@ Use the .pb file in the model as input and the model can be visualized with tens
 ## Tf.graph documentation 
 [Link to tf.graph documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operations)
 
+## Complitation Steps
+1. run the gen_tflite.py script. This will create a new directory /DLC_ma_sub_p1_320_320 which will contain the model that needs to be trained.
+   a. Ensure this file is in the same directory level as the snapshot-1000.pb file
+2. run the train.py script. This will train the compressed model and convert it to a tflite model. This will generate a file named output.tflite which will be compiled into a file that's compatible with the Edge TPU.
+   a. Ensure this file is in the same directory level as the /DLC_ma_sub_p1_320_320 directory
+3. Compile the tflite model using the following documentation: [Link to Coral AI Compiler](https://coral.ai/docs/edgetpu/compiler/)
+   
 ## To Do
 1. Produce splitting 
 
