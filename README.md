@@ -7,15 +7,14 @@ In this project, we are going to develop machine learning apps to be applied on 
 ### Goal
 The goal of the project is to export a common machine learning application to the edge device with the Coral TPU accelerator and address the challenges in the pipeline, including machine learning model, quantization and accuracy.
 ### Tasks
-1. For a given model (in Tensorflow), convert the TFLite model to be used with the
-Coral TPU accelerator. (High priority)
-2. In the above process, certain manipulations on the model may be necessary.
-Create automated tools to perform the operations programmatically. (Medium
-priority)
+1. For a given model (in Tensorflow), convert the TFLite model to be used with the Coral TPU accelerator. (High priority)
+2. In the above process, certain manipulations on the model may be necessary. Create automated tools to perform the operations programmatically. (Medium priority)
 3. Evaluate the accuracy of the converted (quantized) model. And use quantize-aware training or transfer learning to optimize the model. (High priority) Expected outcome: Optimized models for the edge AI using Coral TPU and a set of helper programs for model conversion and/or optimization.
 4. Desired skills
-- Tensorflow, Tensorflow Lite
-- Python programming
+
+   (a) Tensorflow, Tensorflow Lite
+   
+   (b) Python programming
 
 Mentor: Boyan Ding <dboyan@cs.ucla.edu>
 
@@ -70,7 +69,11 @@ python import_pb.py --graph=./freeze/frozen_graph.pb  --log_dir=./tb_logs
 tensorboard --logdir=tb_logs --port=6006 --host=localhost
 ```
 
-## To Do
-1. Produce splitting 
+## Items to do 
+1. Model 
 
-2. First model, compile into tpu format 
+2. Compile into tpu format 
+
+3. Split graph 
+
+4. 
