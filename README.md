@@ -58,7 +58,9 @@ Use the .pb file in the model as input and the model can be visualized with tens
 4. Run import_pb.py by running this command: 
 `python import_pb.py --graph=./freeze/frozen_graph.pb  --log_dir=./tb_logs`
 5. Get the graph on localhost 
-`tensorboard --logdir=tb_logs --port=6006 --host=localhost`
+```bash
+tensorboard --logdir=tb_logs --port=6006 --host=localhost
+```
 
 ## To Do
 1. Produce splitting 
