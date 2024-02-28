@@ -62,7 +62,11 @@ edgetpu_compiler output.tflite
 ```
 4. Run import_pb.py by running this command: 
 ```bash
-python import_pb.py --graph=./freeze/frozen_graph.pb  --log_dir=./tb_logs
+python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
+```
+In this instance, we use snapshot-1000.pb
+```bash
+python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
 ```
 5. Get the graph on localhost 
 ```bash
