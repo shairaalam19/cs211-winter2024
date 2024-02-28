@@ -18,31 +18,31 @@ The goal of the project is to export a common machine learning application to th
 
 Mentor: Boyan Ding <dboyan@cs.ucla.edu>
 
-## Environment setup
+## References & Resources
 ### Python setup
 [Link to tflite documentation](https://coral.ai/docs/edgetpu/tflite-python/) (a system with python 3.9 is needed, you can use conda to create a python 3.9 environment)
 
 ### Model compiler
 [Link to Coral AI Compiler](https://coral.ai/docs/edgetpu/compiler/)
 
-## DLC codebase
+### DLC codebase
 [Link to DLC Codebase](DLC)
 
-## Model 
+### Model 
 [Link to Model](https://huggingface.co/spaces/DeepLabCut/MegaDetector_DeepLabCut/blob/fcceb7af93d1271633a7d0025a21498cf19863d0/DLC_ma_superquadruped_resnet_50_iteration-0_shuffle-1.tar.gz)
 
-## Visualization script
+### Visualization script
 [Link to Visualization script](import_pb.py)
 import_pb.py in this repository 
 Use the .pb file in the model as input and the model can be visualized with tensorboard as described in the comments (available after installing tensorflow)
 
-## Tensorflow Model Basics Documentation
+### Tensorflow Model Basics Documentation
 [Link to Documentation](<Tensorflow Model Basics.pdf>)
 
-## TPU Starter
+### TPU Starter
 [Link to TPU Starter](tpu-starter.tar.gz) 
 
-## Tf.graph documentation 
+### Tf.graph documentation 
 [Link to tf.graph documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operations)
 
 ## Complitation Steps
