@@ -47,14 +47,18 @@ Use the .pb file in the model as input and the model can be visualized with tens
 [Link to tf.graph documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operations)
 
 ## Complitation Steps
-1. run the gen_tflite.py script. This will create a new directory /DLC_ma_sub_p1_320_320 which will contain the model that needs to be trained.
+1. run the gen_tflite.py script. This file is based on the gen_lite_model.py in the tpu-starter. This will create a new directory /DLC_ma_sub_p1_320_320 which will contain the model that needs to be trained.
    a. Ensure this file is in the same directory level as the snapshot-1000.pb file
 `python gen_tflite.py`
-2. run the train.py script. This will train the compressed model and convert it to a tflite model. This will generate a file named output.tflite which will be compiled into a file that's compatible with the Edge TPU.
+2. run the train.py script. This file is based on the dlc_convert.py in the tpu-starter. This will train the compressed model and convert it to a tflite model. This will generate a file named output.tflite which will be compiled into a file that's compatible with the Edge TPU.
    a. Ensure this file is in the same directory level as the /DLC_ma_sub_p1_320_320 directory
 `python train.py`
 3. Compile the tflite model using the following documentation: [Link to Coral AI Compiler](https://coral.ai/docs/edgetpu/compiler/)
 `edgetpu_compiler output.tflite`
+4. Run import_pb.py by running this command: 
+`python import_pb.py --graph=./freeze/frozen_graph.pb  --log_dir=./tb_logs`
+5. Get the graph on localhost 
+`tensorboard --logdir=tb_logs --port=6006 --host=localhost`
 
 ## To Do
 1. Produce splitting 
