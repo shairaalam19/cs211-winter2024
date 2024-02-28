@@ -45,7 +45,7 @@ Use the .pb file in the model as input and the model can be visualized with tens
 ### Tf.graph documentation 
 [Link to tf.graph documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operations)
 
-## Complitation Steps
+## Steps to Model 
 1. run the gen_tflite.py script. This file is based on the gen_lite_model.py in the tpu-starter. This will create a new directory /DLC_ma_sub_p1_320_320 which will contain the model that needs to be trained.
    a. Ensure this file is in the same directory level as the snapshot-1000.pb file
 ```bash
@@ -56,11 +56,12 @@ python gen_tflite.py
 ```bash
 python train.py
 ```
-3. Compile the tflite model using the following documentation: [Link to Coral AI Compiler](https://coral.ai/docs/edgetpu/compiler/)
+## Steps to Compile 
+1. Compile the tflite model using the following documentation: [Link to Coral AI Compiler](https://coral.ai/docs/edgetpu/compiler/)
 ```bash
 edgetpu_compiler output.tflite
 ```
-4. Run import_pb.py by running this command: 
+2. Run import_pb.py by running this command: 
 ```bash
 python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
 ```
@@ -68,16 +69,14 @@ In this instance, we use snapshot-1000.pb
 ```bash
 python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
 ```
-5. Get the graph on localhost 
+3. Get the graph on localhost 
 ```bash
 tensorboard --logdir=tb_logs --port=6006 --host=localhost
 ```
+## Steps to Split Graph
 
 ## Items to do 
-1. Model 
-
-2. Compile into tpu format 
-
-3. Split graph 
-
+1. [Model](#steps-to-model) 
+2. [Compile into TPU format](#steps-to-compile) 
+3. [Split graph](#steps-to-split-graph)
 4. 
