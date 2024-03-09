@@ -74,9 +74,20 @@ python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
 tensorboard --logdir=tb_logs --port=6006 --host=localhost
 ```
 ## Steps to Split Graph
+Refer to [documentation](#tensorflow-model-basics-documentation)
+1. Double click on the "Import" box 
+2. Loading model is in 
+
+## Output of TPU Model 
+1. 
+
+## Model from TPU to non-TPU 
+1. Get output of model on TPU 
+2. Use the output of that model as an input on the model that is not on the TPU 
 
 ## Items to do 
 1. [Model](#steps-to-model) 
 2. [Compile into TPU format](#steps-to-compile) 
 3. [Split graph](#steps-to-split-graph)
-4. 
+4. [Output of TPU Model](#output-of-tpu-model)
+5. [Model from TPU to non-TPU](#model-from-tpu-to-non-tpu)
