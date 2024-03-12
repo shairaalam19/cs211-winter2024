@@ -78,7 +78,7 @@ Refer to [documentation](#tensorflow-model-basics-documentation)
 1. Double click on the "Import" box 
 2. Loading model is in 
 
-## Output of TPU Model 
+## Run Model on TPU
 1. 
 
 ## Model from TPU to non-TPU 
@@ -89,5 +89,5 @@ Refer to [documentation](#tensorflow-model-basics-documentation)
 1. [Model](#steps-to-model) 
 2. [Compile into TPU format](#steps-to-compile) 
 3. [Split graph](#steps-to-split-graph)
-4. [Output of TPU Model](#output-of-tpu-model)
+4. [Run Model on TPU](#run-model-on-tpu)
 5. [Model from TPU to non-TPU](#model-from-tpu-to-non-tpu)
