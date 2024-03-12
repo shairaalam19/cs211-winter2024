@@ -79,6 +79,7 @@ Refer to [documentation](#tensorflow-model-basics-documentation)
 2. Loading model is in 
 
 ## Run Model on TPU
+Follow these steps to get started with the Edge TPU: [Link to Coral Edge TPU Instructions](https://coral.ai/docs/accelerator/get-started/#requirements)
 1. 
 
 ## Model from TPU to non-TPU 
