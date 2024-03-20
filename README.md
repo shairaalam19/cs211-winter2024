@@ -65,9 +65,9 @@ edgetpu_compiler output.tflite
 ```bash
 python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
 ```
-In this instance, we use snapshot-1000.pb
+In this instance, we use snapshot-700000.pb
 ```bash
-python import_pb.py --graph=<pb-filename>.pb  --log_dir=./tb_logs
+python import_pb.py --graph=snapshot-700000.pb  --log_dir=./tb_logs
 ```
 3. Get the graph on localhost 
 ```bash
@@ -80,11 +80,11 @@ Refer to [documentation](#tensorflow-model-basics-documentation)
 
 ## Run Model on TPU
 Follow these steps to get started with the Edge TPU: [Link to Coral Edge TPU Instructions](https://coral.ai/docs/accelerator/get-started/#requirements)
-1. 
 
 ## Model from TPU to non-TPU 
 1. Get output of model on TPU 
-2. Use the output of that model as an input on the model that is not on the TPU 
+2. Use the output of that model as an input on the model that is not on the TPU
+3. Run updated_edgetpu_test.py to do this 
 
 ## Items to do 
 1. [Model](#steps-to-model) 
