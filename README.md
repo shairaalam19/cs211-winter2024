@@ -80,8 +80,6 @@ Refer to [documentation](#tensorflow-model-basics-documentation)
 
 ## Run Model on TPU
 Follow these steps to get started with the Edge TPU: [Link to Coral Edge TPU Instructions](https://coral.ai/docs/accelerator/get-started/#requirements)
-
-## Model from TPU to non-TPU 
 1. Get output of model on TPU 
 2. Use the output of that model as an input on the model that is not on the TPU
 3. Run updated_edgetpu_test.py to do this 
