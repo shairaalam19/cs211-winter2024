@@ -54,7 +54,7 @@ python gen_tflite.py
 2. run the train.py script. This file is based on the dlc_convert.py in the tpu-starter. This will train the compressed model and convert it to a tflite model. This will generate a file named output.tflite which will be compiled into a file that's compatible with the Edge TPU.
    a. Ensure this file is in the same directory level as the /DLC_ma_sub_p1_320_320 directory
 ```bash
-python train.py
+python convert.py
 ```
 ## Steps to Compile 
 1. Compile the tflite model using the following documentation: [Link to Coral AI Compiler](https://coral.ai/docs/edgetpu/compiler/)
